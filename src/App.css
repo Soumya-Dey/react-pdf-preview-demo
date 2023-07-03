@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2em 2em;
+  background-color: #22272e;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf_conatiner input,
+.pdf_conatiner button {
+  font: inherit;
+  text-align: center;
+}
+
+.pdf_conatiner header h1 {
+  font-size: inherit;
+  margin: 0;
+}
+
+.pdf_conatiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.pdf_input {
+  margin: 1em 0;
+  width: calc(100% - 2em);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pdf_input input {
+  width: max-content;
+}
+
+.page-controls {
+  width: max-content;
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 500;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+.page-controls button {
+  padding: 12px 18px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.page-controls span {
+  margin: 0 12px;
+}
+
+.page-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.pdf_preview {
+  margin: 1em 0;
+}
+
+.pdf_preview .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pdf_preview .react-pdf__Page {
+  max-width: calc(100% - 2em);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin: 1em;
+  border-radius: 12px;
+}
+
+.pdf_preview .react-pdf__Page canvas {
+  max-width: 100%;
+  /* max-width: 600px; */
+  z-index: 4;
+  /* height: auto !important; */
+  border-radius: 12px;
+}
+
+.pdf_preview .react-pdf__message {
+  padding: 20px;
+}
